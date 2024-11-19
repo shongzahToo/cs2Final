@@ -1,0 +1,46 @@
+﻿@using GiantNationalBankClient.Models
+@model GetAllAccountsResponseModel
+@{
+    ViewData["Title"] = "All Accounts";
+}
+
+<section class="intro">
+    <h1>Agent Dashboard</h1>
+</section>
+<section class="dashboardLinks">
+    <ul>
+        <li class="nav-item">
+            <a href="javascript: history.go(-1)">Back to Dashboard</a>
+            @Html.ActionLink("Download Trips", "Download", "Agent")
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h4>Booked Trips</h4>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>AccountID</th>
+                <th>UserID</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.accountList != null && Model.accountList.Count > 0)
+            {
+                @foreach (var account in Model.accountList)
+                {
+                    <tr>
+                        <td>@account.AccountID</td>
+                        <td>@account.UserID</td>
+                        <td>@account.Balance</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</section>
+
+
