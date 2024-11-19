@@ -4,6 +4,6 @@
     {
         public const string LoginUser = "User/LoginUser";
         public const string LoginAdmin = "Admin/LoginAdmin";
-        public const string GetAllAccounts = "Account/GetAllAccountData";
+        public const string GetAllAccounts = "GetAllAccountData";
     }
 }

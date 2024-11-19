@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\GiantNationalBankClient.props" />
-</Project>
