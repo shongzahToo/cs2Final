@@ -1,0 +1,67 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GiantNationalBankClient
+build_property.RootNamespace = GiantNationalBankClient
+build_property.ProjectDir = c:\Users\gscw1\source\repos\cs2Final\GiantNationalBankClient\GiantNationalBankClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\gscw1\source\repos\cs2Final\GiantNationalBankClient\GiantNationalBankClient
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Admin/AllAccountsView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsQWNjb3VudHNWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/gscw1/source/repos/cs2Final/GiantNationalBankClient/GiantNationalBankClient/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1cdophiyd6

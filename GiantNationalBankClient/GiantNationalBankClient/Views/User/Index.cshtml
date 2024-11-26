@@ -6,13 +6,13 @@
 
 <section class="intro">
     <h1>User Dashboard</h1>
-    <h4>Welcome @Model.Data.FirstName</h4>
+    <h4>Welcome @Model.UserData.FirstName</h4>
 </section>
 
 <section class="dashboardLinks">
     <ul>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="User" asp-action="UserAllTripsView" asp-route-userId="@Model.Data.UserID">View Booked Trips</a>
+            <a class="nav-link text-dark" asp-controller="User" asp-action="UserAllTripsView" asp-route-userId="@Model.UserData.UserID">View Booked Trips</a>
         </li>
     </ul>
 </section>
@@ -26,19 +26,26 @@
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Street 1</th>
+                <th>Street 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>ZipCode</th>
 
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>@Model.Data.FirstName</td>
-                <td>@Model.Data.LastName</td>
-                <td>@Model.Data.Email</td>
-                <td>@Model.Data.Street1</td>
-                <td>@Model.Data.Street2</td>
-                <td>@Model.Data.City</td>
-                <td>@Model.Data.State</td>
-                <td>@Html.ActionLink("Edit", "Edit", "User", new { id = Model.Data.UserID })</td>
+                <td>@Model.UserData.FirstName</td>
+                <td>@Model.UserData.LastName</td>
+                <td>@Model.UserData.Email</td>
+                <td>@Model.UserData.Phone</td>
+                <td>@Model.UserData.Street1</td>
+                <td>@Model.UserData.Street2</td>
+                <td>@Model.UserData.City</td>
+                <td>@Model.UserData.State</td>
+                <td>@Model.UserData.Zip</td>
+                <td>@Html.ActionLink("Edit", "Edit", "User", Model.UserData)</td>
             </tr>
 
         </tbody>

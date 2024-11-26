@@ -8,7 +8,7 @@
         public int StatusCode { get; set; }
         public string Message { get; set; } = null;
         public string Authtoken { get; set; } = null;
-        public User Data { get; set; } = null;
+        public User UserData { get; set; } = null;
         public Admin AdminData { get; set; } = null;
     }
 }
