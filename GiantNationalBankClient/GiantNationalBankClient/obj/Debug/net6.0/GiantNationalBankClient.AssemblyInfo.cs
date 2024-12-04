@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiantNationalBankClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a296ff20351894286e2afc8e92805253c38b9950")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bd5c1bb46829e83945b2939f8aa234f4777e917")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiantNationalBankClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiantNationalBankClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

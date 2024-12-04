@@ -508,11 +508,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
+      "projectUniqueName": "C:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
       "projectName": "GiantNationalBankClient",
-      "projectPath": "c:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
+      "projectPath": "C:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
       "packagesPath": "C:\\Users\\gscw1\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\obj\\",
+      "outputPath": "C:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

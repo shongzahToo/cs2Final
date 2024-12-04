@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jB1qKJazDvw=",
+  "dgSpecHash": "7ABL2GfLqiY=",
   "success": true,
-  "projectFilePath": "c:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
+  "projectFilePath": "C:\\Users\\gscw1\\source\\repos\\cs2Final\\GiantNationalBankClient\\GiantNationalBankClient\\GiantNationalBankClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gscw1\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.7\\microsoft.aspnetcore.authentication.jwtbearer.6.0.7.nupkg.sha512",
     "C:\\Users\\gscw1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
