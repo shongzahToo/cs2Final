@@ -1,8 +1,6 @@
-﻿using System.Transactions;
-
-namespace GiantNationalBankClient.Models
+﻿namespace GiantNationalBankClient.Models
 {
-    public class GetAccountByIdResponseModel
+    public class AddTransactionResponseModel
     {
         public bool Status { get; set; }
         public int StatusCode { get; set; }

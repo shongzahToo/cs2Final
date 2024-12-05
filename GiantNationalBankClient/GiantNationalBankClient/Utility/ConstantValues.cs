@@ -9,5 +9,7 @@
         public const string GetUserById = "User/GetUserById";
         public const string RegisterUser = "User/RegisterUser";
         public const string GetAccountById = "GetAccountByID";
+        public const string AddDebitTransaction = "DebitTransaction";
+        public const string AddCreditTransaction = "CreditTransaction";
     }
 }

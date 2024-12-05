@@ -30,6 +30,29 @@ namespace GiantNationalBankClient.Controllers
             return View(ResponseModel);
         }
 
+
+        /// <summary>
+        /// Method that adds transactions from the perspective of the admin 
+        /// </summary>
+        /// <param transaction="data for the api Call (accountId, amount, and name)"></param>
+        /// <param IsDebit="represents a boolean value for whether or not to make a debit or credit api call"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> AddTransactionByAccountId(AddTransactionModel transaction, bool IsDebit)
+        {
+            AddTransactionResponseModel ResponseModel = null;
+            try
+            {
+                ServiceHelper objService = new ServiceHelper();
+                string response = await objService.GetRequest(string.Empty, (IsDebit ? ConstantValues.AddDebitTransaction : ConstantValues.AddCreditTransaction) + $"?accountID={transaction.AccountID}&amount={transaction.Amount}&name={transaction.Name}", false, string.Empty).ConfigureAwait(true);
+                ResponseModel = JsonConvert.DeserializeObject<AddTransactionResponseModel>(response);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("AllAccountsView API " + ex.Message);
+            }
+            return View(/*insert view here or something idk*/);
+        }
+
         public async Task<IActionResult> ViewAllTransactionsByAccount(Account account)
         {
             GetAccountByIdResponseModel ResponseModel = null;
