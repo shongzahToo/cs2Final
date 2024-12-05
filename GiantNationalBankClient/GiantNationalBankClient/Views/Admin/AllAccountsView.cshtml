@@ -36,6 +36,7 @@
                         <td>@account.AccountID</td>
                         <td>@account.UserID</td>
                         <td>@account.Balance</td>
+                        <td>@Html.ActionLink("View All Transactions", "ViewAllTransactionsByAccount", "Admin", account)</td>
                     </tr>
                 }
             }

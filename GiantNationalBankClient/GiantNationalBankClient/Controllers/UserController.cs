@@ -9,9 +9,9 @@ namespace GiantNationalBankClient.Controllers
     {
         public IActionResult Index(LoginResponseModel userData)
         {
-
             return View();
         }
+
         public async Task<ActionResult> Edit(User user)
         {
             return View();
