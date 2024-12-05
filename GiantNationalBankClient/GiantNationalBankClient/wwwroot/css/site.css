@@ -21,7 +21,9 @@ label {
     color:red;
 }
 
-
+.no-hover {
+    --bs-table-hover-bg: none !important;
+}
 
 .dashboardLinks{
     background-color:lightgray;

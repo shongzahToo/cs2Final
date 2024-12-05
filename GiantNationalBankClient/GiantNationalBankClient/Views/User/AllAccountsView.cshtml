@@ -1,23 +1,23 @@
 ﻿@using GiantNationalBankClient.Models
 @model GetAllAccountsResponseModel
 @{
-    ViewData["Title"] = "Admin Dashboard";
-
+    ViewData["Title"] = "All Accounts";
 }
 
 <section class="intro">
-    <h1>Admin Dashboard</h1>
+    <h1>User Accounts</h1>
 </section>
 <section class="dashboardLinks">
     <ul>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Admin" asp-action="AllAccountsView">View All Acounts</a>
+            <a href="javascript: history.go(-1)">Back to Dashboard</a>
+            @Html.ActionLink("Create New Account", "CreateAccount", "User", new { userId = Model.UserId })
         </li>
     </ul>
 </section>
 
 <section>
-    <h4>All Accounts</h4>
+    <h4>Bank Accounts</h4>
     <table class="table table-sm table-striped table-bordered m-2">
         <thead>
             <tr>
@@ -27,7 +27,7 @@
             </tr>
         </thead>
         <tbody>
-            @if (Model != null && Model.AccountList != null && Model.AccountList.Count > 0)
+            @if (Model.AccountList != null && Model.AccountList.Count > 0)
             {
                 @foreach (var account in Model.AccountList)
                 {
@@ -35,7 +35,6 @@
                         <td>@account.AccountID</td>
                         <td>@account.UserID</td>
                         <td>@account.Balance</td>
-                        <td></td>
                     </tr>
                     @if (account.TransactionList != null && account.TransactionList.Count > 0)
                     {
@@ -78,5 +77,3 @@
         </tbody>
     </table>
 </section>
-
-

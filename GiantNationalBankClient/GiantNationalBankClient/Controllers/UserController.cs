@@ -56,5 +56,46 @@ namespace GiantNationalBankClient.Controllers
             return View("");
         }
 
+        /// <summary>
+        /// return all trips for a user with user id
+        /// </summary>
+        /// <param name="userID"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> AllAccountsView([FromQuery(Name = "userId")] int userID)
+        {
+            GetAllAccountsResponseModel responseModel = null;
+            try
+            {
+                var strSerializedData = string.Empty;
+                ServiceHelper objService = new ServiceHelper();
+                string response = await objService.GetRequest(strSerializedData, ConstantValues.GetAccountByUser + "?userID=" + userID, false, string.Empty).ConfigureAwait(true);
+                responseModel = JsonConvert.DeserializeObject<GetAllAccountsResponseModel>(response);
+                responseModel.UserId = userID;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("GetAccountByUser API: " + ex.Message);
+            }
+            return View(responseModel);
+        }
+
+        public async Task<ActionResult> CreateAccount(int userID)
+        {
+            CreateAccountResponseModel responseModel = new CreateAccountResponseModel();
+            try
+            {
+                var strSerializedData = String.Empty;
+                ServiceHelper objService = new ServiceHelper();
+                string response = await objService.PostRequest(strSerializedData, ConstantValues.CreateNewAccount + "?userID=" + userID, false, string.Empty).ConfigureAwait(true);
+                responseModel = JsonConvert.DeserializeObject<CreateAccountResponseModel>(response);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("CreateNewAccount API: " + ex.Message);
+            }
+            return RedirectToAction("AllAccountsView", "User", new { userId = responseModel.Account.UserID });
+        }
+
     }
 }

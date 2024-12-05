@@ -177,7 +177,6 @@ namespace GiantNationalBankClient.Controllers
                     {
                         LoginResponseModel ResponseModel = null;
                         var strSerializedData = JsonConvert.SerializeObject(userData);
-                        Console.WriteLine(strSerializedData);
                         ServiceHelper objService = new ServiceHelper();
                         string response = await objService.PostRequest(strSerializedData, ConstantValues.LoginAdmin, false, string.Empty).ConfigureAwait(true);
                         ResponseModel = JsonConvert.DeserializeObject<LoginResponseModel>(response);
@@ -194,7 +193,13 @@ namespace GiantNationalBankClient.Controllers
                         else
                         {
                             Console.WriteLine("response succeeded");
-                            return View("Views/Admin/Index.cshtml", ResponseModel);
+
+                            GetAllAccountsResponseModel AccountsResponseModel = null;
+                            ServiceHelper AccountsobjService = new ServiceHelper();
+                            string Accountsresponse = await objService.GetRequest(string.Empty, ConstantValues.GetAllAccounts, false, string.Empty).ConfigureAwait(true);
+                            AccountsResponseModel = JsonConvert.DeserializeObject<GetAllAccountsResponseModel>(Accountsresponse);
+
+                            return View("Views/Admin/Index.cshtml", AccountsResponseModel);
                         }
 
                     }

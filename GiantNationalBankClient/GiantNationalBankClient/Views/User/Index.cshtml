@@ -12,7 +12,7 @@
 <section class="dashboardLinks">
     <ul>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="User" asp-action="UserAllTripsView" asp-route-userId="@Model.UserData.UserID">View Booked Trips</a>
+            <a class="nav-link text-dark" asp-controller="User" asp-action="AllAccountsView" asp-route-userId="@Model.UserData.UserID">View Accounts</a>
         </li>
     </ul>
 </section>
@@ -31,7 +31,6 @@
                 <th>City</th>
                 <th>State</th>
                 <th>ZipCode</th>
-
             </tr>
         </thead>
         <tbody>
@@ -51,9 +50,3 @@
         </tbody>
     </table>
 </section>
-
-<section>
-    <h4>Book a Trip</h4>
-</section>
-
-
