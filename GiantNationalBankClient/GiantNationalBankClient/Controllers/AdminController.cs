@@ -34,16 +34,15 @@ namespace GiantNationalBankClient.Controllers
         /// <summary>
         /// Method that adds transactions from the perspective of the admin 
         /// </summary>
-        /// <param transaction="data for the api Call (accountId, amount, and name)"></param>
-        /// <param IsDebit="represents a boolean value for whether or not to make a debit or credit api call"></param>
+        /// <param transaction="data for the api Call (accountId, amount, name and transactionType)"></param>
         /// <returns></returns>
-        public async Task<IActionResult> AddTransactionByAccountId(AddTransactionModel transaction, bool IsDebit)
+        public async Task<IActionResult> AddTransactionByAccountId(Transaction transaction)
         {
             AddTransactionResponseModel ResponseModel = null;
             try
             {
                 ServiceHelper objService = new ServiceHelper();
-                string response = await objService.GetRequest(string.Empty, (IsDebit ? ConstantValues.AddDebitTransaction : ConstantValues.AddCreditTransaction) + $"?accountID={transaction.AccountID}&amount={transaction.Amount}&name={transaction.Name}", false, string.Empty).ConfigureAwait(true);
+                string response = await objService.GetRequest(string.Empty, (transaction.TransactionType ? ConstantValues.AddCreditTransaction : ConstantValues.AddDebitTransaction) + $"?accountID={transaction.AccountId}&amount={transaction.Amount}&name={transaction.TransactionName}", false, string.Empty).ConfigureAwait(true);
                 ResponseModel = JsonConvert.DeserializeObject<AddTransactionResponseModel>(response);
             }
             catch (Exception ex)
