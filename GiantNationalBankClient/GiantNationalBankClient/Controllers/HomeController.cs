@@ -29,6 +29,74 @@ namespace GiantNationalBankClient.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Registration(RegistrationModel userData)
+        {
+            if (ModelState.IsValid)
+            {
+                ProcessForm(userData);
+                return View("Views/Home/Login.cshtml");
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// Method that handles the registration form 
+        /// </summary>
+        /// <param name="userData"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> ProcessForm(RegistrationModel userData)
+        {
+            //use the userData recieved from the form to make an API call that adds
+            //the new user to the database
+
+
+            //hash the user's password which has been collected as plain text
+            string hashedPassword = Helper.EncryptCredentials(userData.Password);
+
+            //update the object so this is what is sent to the database
+            userData.Password = hashedPassword;
+
+            if(userData.Street2 ==null) userData.Street2 = string.Empty;
+
+            //call the API with the user data
+            try
+            {
+                RegistrationResponseModel ResponseModel = null;
+                var strSerializedData = JsonConvert.SerializeObject(userData);
+                ServiceHelper objService = new ServiceHelper();
+                string response = await objService.PostRequest(strSerializedData, ConstantValues.RegisterUser, false, string.Empty).ConfigureAwait(true);
+                ResponseModel = JsonConvert.DeserializeObject<RegistrationResponseModel>(response);
+
+                if (ResponseModel == null)
+                {
+                    //error with the API that caused a null return
+
+                }
+                else if (ResponseModel.Status == false)
+                {
+                    //an error occured
+
+                }
+                else
+                {
+                    //everything is OK - return
+                    return View(ResponseModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Registration API " + ex.Message);
+            }
+            return View();
+        }
+
         public async Task<IActionResult> Login(LoginModel userData)
         {
             if (userData != null)

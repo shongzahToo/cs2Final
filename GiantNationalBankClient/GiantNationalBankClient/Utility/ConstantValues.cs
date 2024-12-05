@@ -7,5 +7,6 @@
         public const string GetAllAccounts = "GetAllAccountData";
         public const string Updateuser = "User/SaveUserRecord";
         public const string GetUserById = "User/GetUserById";
+        public const string RegisterUser = "User/RegisterUser";
     }
 }
