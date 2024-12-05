@@ -56,7 +56,6 @@ namespace GiantNationalBankClient.Controllers
                         if (ResponseModel == null)
                         {
                             //error with the API that caused a null return. what happened?  Needs handled
-
                         }
                         else if (ResponseModel.Status == false)
                         {
