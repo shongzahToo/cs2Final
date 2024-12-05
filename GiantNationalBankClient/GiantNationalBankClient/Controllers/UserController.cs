@@ -37,7 +37,7 @@ namespace GiantNationalBankClient.Controllers
                 {
 
                 }
-                else if (ResponseModel.status == false)
+                else if (ResponseModel.Status == false)
                 {
 
                 }

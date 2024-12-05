@@ -4,8 +4,8 @@ namespace GiantNationalBankClient.Models;
 
 public class EditUserResponseModel
 {
-    public bool status {  get; set; }
-    public int statusCode { get; set; }
-    public string message { get; set; }
+    public bool Status {  get; set; }
+    public int StatusCode { get; set; }
+    public string Message { get; set; }
     public User Data { get; set; }
 }

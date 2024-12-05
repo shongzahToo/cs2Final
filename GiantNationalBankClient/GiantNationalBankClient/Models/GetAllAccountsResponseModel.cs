@@ -2,9 +2,9 @@
 {
     public class GetAllAccountsResponseModel
     {
-        public bool status {  get; set; }
-        public int statusCode { get; set; }
-        public string message { get; set; }
-        public List<Account> accountList { get; set; }
+        public bool Status {  get; set; }
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
+        public List<Account> AccountList { get; set; }
     }
 }

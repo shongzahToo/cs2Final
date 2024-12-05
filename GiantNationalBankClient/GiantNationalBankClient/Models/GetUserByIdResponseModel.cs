@@ -2,9 +2,9 @@
 {
     public class GetUserByIdResponseModel
     {
-        public bool status { get; set; }
-        public int statusCode { get; set; }
-        public string message { get; set; }
-        public User user { get; set; }
+        public bool Status { get; set; }
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
+        public User User { get; set; }
     }
 }
